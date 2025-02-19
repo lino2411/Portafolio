@@ -42,7 +42,7 @@ body.dark {
     align-items: center;
     justify-content: space-between;
     height: 75px;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     background-color: var(--bg-card-color);
     transition: var(--transition);
 }
@@ -71,43 +71,26 @@ body.dark {
 
 /*----------css para los colores del nav----------*/   
 
-/*---------Idioma---------*/
-.flags {
-    width: 75px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.flags__item {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.flags__img {
-    display: inline-block;
-}
-/*--------------------*/
 
 .colors {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20px;
-    width: 130px;
+    height: 30px;
+    width: 150px;
 }
 
 .colors__item {
     width: 25px;
     height: 25px;
-    border: 1px solid var(--text-color);
+    border: none;
     background-color: var(--primary-color);
     border-radius: 50%;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.colors__item:hover {
+    transform: scale(1.5);
 }
 
 .colors__item--blue {
@@ -150,34 +133,61 @@ body.dark {
     border-radius: var(--border-radius);
 }
 
+.card--profile {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card__img-container {
     /* min-width: 320px; */
-    width: 320px;
-    height: 320px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .card__header {
     padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card__title {
     font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 15px;
 }
 
 .card__subtitle {
     margin: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0.8;
 }
 
-.experiencia{
+.card__description {
+    font-size: 1rem;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.raya {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 1em 0;
+    background-color: var(--primary-color);
+}
+
+/* .experiencia{
     font-size: 0.8rem;
     opacity: 0.8;
-}
+} */
 
 
+/* contacto */
 .card__link {
     margin-bottom: 0.8em;
 }
@@ -195,6 +205,21 @@ body.dark {
         display: grid;
         gap: 0.5em;
 }
+
+.card__habilidades {
+    padding: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+/* card habilidades */
+.habilidades {
+    font-size: 0.9rem;
+    padding: 0 20px;
+    line-height: 1.5rem;
+}
+
 
 @media screen and (min-width: 720px){
     .column--right{
@@ -449,6 +474,14 @@ body.dark {
 /* -----------mediaquey para mobil -----------------*/
 
 @media screen and (max-width: 760px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .card--project {
             display: grid;
             grid-column: 1 / -1;
@@ -460,6 +493,7 @@ body.dark {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
         align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
         margin-top: 1em;
         padding: 1em;
         border: 2px solid var(--primary-color);
@@ -470,6 +504,10 @@ body.dark {
         max-width: 90%; /* Aumenta el tamaño de la imagen en móviles */
         margin-right: 0; /* Elimina el margen derecho */
         margin-bottom: 1em; /* Agrega margen inferior para separar la imagen del texto */
+    }
+
+    .card--profile{
+        width: 100%;
     }
 
     .project__tag{
