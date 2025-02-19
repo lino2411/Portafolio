@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portafolio</title>
+  </head>
+  <body class="dark">
+    <header class="header">
+      <section class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon">
+          <p id="toggle-text" class="toggle-theme__text">Modo oscuro </p>
+        </div>
+      </section>
+
+      <section id="flags" class="flags">
+        <div class="flags__item" data-languaje="es">
+          <img src="assets/icons/es.svg" alt="spaña" class="flags__img">
+        </div>
+
+        <div class="flags__item" data-languaje="en">
+          <img src="assets/icons/us.svg" alt="estados unidos" class="flags__img">
+        </div>
+      </section>
+
+      <section id="toggle-colors" class="colors">
+        <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+        <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+        <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+        <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="column column--left">
+        <!-- PROFILE CARD -->
+         <article class="card card--profile">
+            <div class="card__img-container">
+              <img src="assets/img/profile.png" alt="Perfil de Lino Quito">
+            </div>
+
+            <div class="card__header">
+              <h2 class="card__title">Lino Quito</h2>
+              <p class="card__subtitle">Front end developer</p>
+            </div>
+
+            <div class="card__body">
+              <div class="card__link">
+                <i class="fas fa-envelope icon"></i>
+                <a href="mailto:kaiser66611@gmail.com">kaiser66611@gmail.com</a>
+              </div>
+
+              <div class="card__link">
+                <i class="fas fa-phone-alt icon"></i>
+                <a href="tel:+51927291508">+51 927291508</a>
+              </div>
+
+              <div class="card__link">
+                <i class="fab fa-whatsapp icon"></i>
+                <a href="https://wa.me/51927291508">+51 927291508</a>
+              </div>
+            
+              <p class="card__text">
+                Soy un desarrollador front-end con experiencia en la creación de interfaces de usuario atractivas
+              y funcionales. <br> Me apasiona el desarrollo web porque me permite combinar creatividad y lógica para resolver problemas y crear experiencias de usuario excepcionales. Disfruto aprendiendo nuevas tecnologías y tendencias en el campo del desarrollo web, y siempre busco mejorar mis habilidades y conocimientos. <br>Me encanta trabajar en proyectos desafiantes que me permitan crecer profesionalmente y contribuir al éxito de los equipos con los que colaboro.
+              </p>
+            </div>
+         </article>
+
+         <article class="card card--experiences">
+          <h2 class="card__title">Experiencias</h2>
+          <div class="experience">
+            <img src="assets/img/logo.png" alt="" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">Feb 2024 - Current</p>
+              <h3 class="experience__job">Front End Developer</h3>
+              <p class="experience__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta earum voluptatibus facere quae, quisquam quidem nesciunt ad nulla adipisci.</p>
+            </div>
+          </div>
+
+          <div class="experience">
+            <img src="assets/img/logo.png" alt="" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">Feb 2024 - Current</p>
+              <h3 class="experience__job">Front End Developer</h3>
+              <p class="experience__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta earum voluptatibus facere quae, quisquam quidem nesciunt ad nulla adipisci.</p>
+            </div>
+          </div>
+
+          <div class="experience">
+            <img src="assets/img/logo.png" alt="" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">Feb 2024 - Current</p>
+              <h3 class="experience__job">Front End Developer</h3>
+              <p class="experience__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta earum voluptatibus facere quae, quisquam quidem nesciunt ad nulla adipisci.</p>
+            </div>
+          </div>
+         </article>
+
+         <article class="card card--hobbies">
+          <h2 class="card__title">Hobbies</h2>
+          <div class="card__image-container">
+            <img src="assets/img/hobbie.jpg" alt="hobbies" class="hobbie-image">
+          </div>
+          <h3 class="hobbie__title">Bicker</h3>
+          <p class="hobbie__desciption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid molestias sunt doloremque repellendus, enim quidem?</p>
+         </article>
+      </section>
+
+      <section class="column column--right">
+          <article class="card">
+            <h2 class="card__title">Front Ent <h2>
+              <small class="experiencia">Años de experiencia</small>
+              <div class="skills">
+                <div class="skills__header">
+                  <span class="skills__star-level">0</span>
+                  <span class="skills__star-level">4</span>
+                </div>
+              </div>
+              
+              <div class="skills">
+                <div class="skills__item">
+                  <p class="skills__tech">HTML</p>
+                  <div class="skills__bar skills__bar--80"></div>
+                </div>
+
+                <div class="skills__item">
+                  <p class="skills__tech">CSS</p>
+                  <div class="skills__bar skills__bar--90"></div>
+                </div>
+
+                <div class="skills__item">
+                  <p class="skills__tech">JavaScript</p>
+                  <div class="skills__bar skills__bar--60"></div>
+                </div>
+
+              </div>
+          </article>
+
+          <article class="card">
+            <h2 class="card__title">Framework <h2>
+              <small class="experiencia">Años de experiencia</small>
+              <div class="skills">
+                <div class="skills__header">
+                  <span class="skills__star-level">0</span>
+                  <span class="skills__star-level">4</span>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills__item">
+                  <p class="skills__tech">HTML</p>
+                  <div class="skills__bar skills__bar--80"></div>
+                </div>
+    
+                <div class="skills__item">
+                  <p class="skills__tech">CSS</p>
+                  <div class="skills__bar skills__bar--90"></div>
+                </div>
+    
+                <div class="skills__item">
+                  <p class="skills__tech">JavaScript</p>
+                  <div class="skills__bar skills__bar--60"></div>
+                </div>
+    
+              </div>
+          </article>
+
+          <article class="card">
+            <h2 class="card__title">Design <h2>
+              <small class="experiencia">Años de experiencia</small>
+              <div class="skills">
+                <div class="skills__header">
+                  <span class="skills__star-level">0</span>
+                  <span class="skills__star-level">4</span>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills__item">
+                  <p class="skills__tech">Figma</p>
+                  <div class="skills__bar skills__bar--80"></div>
+                </div>
+              </div>
+          </article>
+
+          <article class="card card--project">
+            <h2 class="card__title">Mis proyectos</h2>
+            <div class="project__container">
+                <img src="assets/img/project.jpg" alt="Descripción de la imagen del proyecto" class="project__image">
+                <div class="project__info">
+                    <span class="project__tag">#HTML</span>
+                    <span class="project__tag">#CSS</span>
+                    <span class="project__tag">#JavaScript</span>
+                    <span class="project__tag">#Responsive</span>
+                    <h3 class="project__subtittle">Landing page</h3>
+                    <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta earum voluptatibus facere quae, quisquam quidem nesciunt ad nulla adipisci.</p>
+                    <div class="buttons">
+                        <a href="#" class="button button--primary">Demo</a>
+                        <a href="#" class="button button--ghost">Código</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="card card--project">
+          <!-- <h2 class="card__title">Mis proyectos</h2> -->
+          <div class="project__container">
+              <img src="assets/img/project.jpg" alt="Descripción de la imagen del proyecto" class="project__image">
+              <div class="project__info">
+                  <span class="project__tag">#HTML</span>
+                  <span class="project__tag">#CSS</span>
+                  <span class="project__tag">#JavaScript</span>
+                  <span class="project__tag">#Responsive</span>
+                  <h3 class="project__subtittle">Landing page</h3>
+                  <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta earum voluptatibus facere quae, quisquam quidem nesciunt ad nulla adipisci.</p>
+                  <div class="buttons">
+                      <a href="#" class="button button--primary">Demo</a>
+                      <a href="#" class="button button--ghost">Código</a>
+                  </div>
+              </div>
+          </div>
+      </article>
+
+      <article class="card card--project">
+        <!-- <h2 class="card__title">Mis proyectos</h2> -->
+        <div class="project__container">
+            <img src="assets/img/project.jpg" alt="Descripción de la imagen del proyecto" class="project__image">
+            <div class="project__info">
+                <span class="project__tag">#HTML</span>
+                <span class="project__tag">#CSS</span>
+                <span class="project__tag">#JavaScript</span>
+                <span class="project__tag">#Responsive</span>
+                <h3 class="project__subtittle">Landing page</h3>
+                <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dicta earum voluptatibus facere quae, quisquam quidem nesciunt ad nulla adipisci.</p>
+                <div class="buttons">
+                    <a href="#" class="button button--primary">Demo</a>
+                    <a href="#" class="button button--ghost">Código</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+      </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
